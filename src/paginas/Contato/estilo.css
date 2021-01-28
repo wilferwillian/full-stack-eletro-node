@@ -1,0 +1,13 @@
+.control {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.contato{
+    margin-top: 90px;
+    width: 50%;
+}
+.contato img{
+    width: 50px;
+    padding: 5px;
+}
