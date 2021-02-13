@@ -1,43 +1,45 @@
-import express from 'express';
-import cors from 'cors';
-import mysql from 'mysql';
-
+const express = require('express');
 const server = express();
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
+
+
+require('./models/comentarios');
+const Comentario= mongoose.model("comentarios");
+
+require('./models/produtos');
+const Produto= mongoose.model("produtos");
+
+require('./Database/connect');
 
 server.use(express.json());
 server.use(cors());
+server.use(bodyParser.urlencoded({extended:true}))
 
 
-const connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "fullstackeletro"
-})
-
-server.get("/produtos", (req, res) => {
+server.get("/produtos",async (req, res) => {
     
-    connection.query("SELECT * FROM produto", (error, result) => {
-        if (error) {
-            res.send(error)
-        } else {
-            res.send(result)
-        }
-    })
+    const  produtoResponse = await Produto.find();
+    const produtoJson = await produtoResponse;
+    return res.json(produtoJson)
 });
 
-server.post("/usuarios", (req, res) => {
-    const { name } = req.body;
-    connection.query(`INSERT INTO usuarios(name) values ('${name}')`, (error, result) => {
-        if (error) {
-            res.send("Erro ao inserir o usuário")
-        } else {
-            res.status(201).json({ //send("Usuário cadastrado com sucesso!")
-                message: "Usuário cadastrado com sucesso!"
-            })
-            
-        }
-    })
+server.get("/mostrar",async (req, res) => {
+    
+    const  comentarioResponse = await Comentario.find();
+    const comentarioJson = await comentarioResponse;
+    return res.json(comentarioJson)
+});
+
+server.post("/comentarios",async (req, res) => {
+   const novoComentario = new Comentario({
+        nome: req.body.nome,
+        msg: req.body.msg
+   })
+   const result = await novoComentario.save();
+   res.send(result)
 })
 
 

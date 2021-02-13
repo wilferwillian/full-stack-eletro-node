@@ -1,0 +1,121 @@
+[{
+  "_id": {
+    "$oid": "6022dbf96b74680810da5345"
+  },
+  "idproduto": 3,
+  "categoria": "geladeira",
+  "descricao": "Geladeira Brastemp inverse Frost Free Inox de 574 litros",
+  "preco": 6389,
+  "precofinal": 5019,
+  "imagem": "./imagens/geladeira inverse brastemp.jpg"
+},{
+  "_id": {
+    "$oid": "6022dbf96b74680810da5346"
+  },
+  "idproduto": 4,
+  "categoria": "geladeira",
+  "descricao": "Geladeira Brastemp Frost Free branca de 375 litros",
+  "preco": 2068,
+  "precofinal": 1910,
+  "imagem": "./imagens/g_brastemp_branca.jpg"
+},{
+  "_id": {
+    "$oid": "6022dbf96b74680810da5347"
+  },
+  "idproduto": 5,
+  "categoria": "geladeira",
+  "descricao": "Geladeira Consul Frost Free Inox 340 litros",
+  "preco": 2199.9,
+  "precofinal": 2069,
+  "imagem": "./imagens/g_ff consul.jpg"
+},{
+  "_id": {
+    "$oid": "6022dbf96b74680810da5348"
+  },
+  "idproduto": 6,
+  "categoria": "fogões",
+  "descricao": "Fogao 4 bocas Consul Inox com mesa de vidro",
+  "preco": 1209,
+  "precofinal": 1129,
+  "imagem": "./imagens/fogao_consul_inox.jpg"
+},{
+  "_id": {
+    "$oid": "6022dbf96b74680810da5349"
+  },
+  "idproduto": 7,
+  "categoria": "fogões",
+  "descricao": "Fogao de 4 bocas Atlas Monaco com acedimento automatico",
+  "preco": 609.9,
+  "precofinal": 519.7,
+  "imagem": "./imagens/fogao_monaco.jpg"
+},{
+  "_id": {
+    "$oid": "6022dbf96b74680810da534a"
+  },
+  "idproduto": 8,
+  "categoria": "microondas",
+  "descricao": "Forno de Microondas Consul Inox 32 litros 220 volts",
+  "preco": 580.9,
+  "precofinal": 409.88,
+  "imagem": "./imagens/microondas_consul.jpg"
+},{
+  "_id": {
+    "$oid": "6022dbf96b74680810da534b"
+  },
+  "idproduto": 9,
+  "categoria": "microondas",
+  "descricao": "Forno de Microondas Philco 25 litros Espelhado 220 volts",
+  "preco": 459.9,
+  "precofinal": 436.05,
+  "imagem": "./imagens/microondas_Philco.jpg"
+},{
+  "_id": {
+    "$oid": "6022dbf96b74680810da534c"
+  },
+  "idproduto": 10,
+  "categoria": "microondas",
+  "descricao": "Forno de Microondas Eletrolux Branco de 20 litros 127 volts",
+  "preco": 508.7,
+  "precofinal": 464.53,
+  "imagem": "./imagens/microondas_electrolux.jpg"
+},{
+  "_id": {
+    "$oid": "6022dbf96b74680810da534d"
+  },
+  "idproduto": 11,
+  "categoria": "lavadora",
+  "descricao": "Lavadora de roupas Brastemp 11kg Com Turbo Performance Branca",
+  "preco": 1699,
+  "precofinal": 1214.1,
+  "imagem": "./imagens/lavadora_de_roupa_brastemp.jpg"
+},{
+  "_id": {
+    "$oid": "6022dbf96b74680810da534e"
+  },
+  "idproduto": 12,
+  "categoria": "lavadora",
+  "descricao": "Lavadora de roupas Philco Inverter 12kg",
+  "preco": 2399.9,
+  "precofinal": 2179.9,
+  "imagem": "./imagens/lavador_de_roupa_Philco.jpg"
+},{
+  "_id": {
+    "$oid": "6022dbf96b74680810da534f"
+  },
+  "idproduto": 13,
+  "categoria": "lava-louca",
+  "descricao": "Lava-louça Eletrolux Inox 10 servicos, 6 prog. de lavagem e painel blue touch",
+  "preco": 3599,
+  "precofinal": 2799.9,
+  "imagem": "./imagens/lava_louça_electrolux.jpg"
+},{
+  "_id": {
+    "$oid": "6022dbf96b74680810da5350"
+  },
+  "idproduto": 14,
+  "categoria": "lava-louca",
+  "descricao": "Lava-louca Brastemp Compacta com 8 servicos Branca 127v",
+  "preco": 1970.5,
+  "precofinal": 1730.61,
+  "imagem": "./imagens/lava_louça_brastemp.jpg"
+}]
